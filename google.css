@@ -1,0 +1,173 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, input, button{
+    font-family: Arial;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.menu{
+    height: 48px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-section{
+    display: flex;
+    align-items: center;
+}
+
+.menu-section.left .menu-icon{
+    padding: 12px 16px;
+}
+
+.menu-link{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #757575;
+    padding: 12px 8px;
+}
+
+.menu-link.active{
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+}
+
+.menu-link:not(.active){
+    margin-bottom: 2px;
+}
+
+.menu.section.rigth{
+    margin-right: 4px;
+}
+
+.menu-section.rigth .menu-icon{
+    padding: 12px;
+}
+
+
+.menu-profile{
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.menu-avatar-frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+
+  /* Main */
+
+  .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 56px 8px 0;
+    align-items: center;
+  }
+
+  .content-logo {
+    height: 100px;
+    width: 300px;
+  }
+
+  .content-search {
+    margin-top: 18px;
+    width: 100%;
+    max-width: 736px;
+    padding: 7px 10px 6px 20px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+    background: transparent;
+    border-radius: 25px;
+    border: 1px solid #dadce0;
+    outline: 0;
+  }
+
+  .main-buttons{
+   display: flex;
+   column-gap: 8px;
+   margin-top: 10px;
+  }
+
+    
+
+.main-buttons button{
+  font-size: 14px;
+  border: 1px solid Azure;
+  border-radius: 4px;
+  background: #f8f9fa;
+  width: 128px;
+  height: 30px;
+
+}
+
+  .content-offer {
+    margin-top: 24px;
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  
+  .content-offer a {
+    text-decoration: none;
+    color: #1967d2;
+  }
+  
+  /* Footer */
+  
+  .footer {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+  }
+
+  .footer-section:not(:first-child) {
+    border-top: 1px solid #e4e4e4;
+  }
+  
+  .footer-location {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 10px 12px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #5f6368;
+    padding: 10px;
+  }
+
+  .footer-links a:not(:first-child) {
+    margin-left: 27px;
+  }
