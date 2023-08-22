@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="survey-form.css" />
+  </head>
+  <body>
+  <header>
+  <div id="title"><h1>Survey Form</h1>
+    </header>
+
+<form id="survey-form">
+
+  <div id="description"> Let us know how we can improve freeCodeCamp</div><br>
+
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+      <label class="left" id="name-label" for="name">*Name:</label>
+    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="sub-group">
+      <label class="left" id="email-label" for="email">*Email:</label>
+    <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+    </div>
+
+    <div class="sub-group">
+      <label  class="left" id="number-label" for="number">*Age:</label>
+    <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field" id="number">
+  </div>
+
+
+    <div class="sub-group">
+      <label class="left" for="dropdown"> Which option best describes you current role?</label>
+
+      <select class="right dropdown" id="dropdown" name="dropdown">
+        <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">  Professional </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="fieldset">
+<div class="sub-group">
+<label class="left" > *How likely is that you recommend freeCodeCamp to a friend?</label>
+
+   <ul style="list-style: none;" class="left">
+
+   <li class="radio"><label><input type="radio" name="recommend" value="exodus" >Definetily</label></li>
+     <li class="radio"><label><input type="radio" name="recommend" value="alcatraz">Maybe</label></li>
+     <li class="radio"><label><input type="radio" name="recommend" value="aokigahara" >Not sure<label></li>
+       </ul></div></fieldset>
+
+       <fieldset class="fieldset">
+       <div class="sub-grupo" >
+        <label class="left" > 
+           <p> What do you like most in FCC?     </label>
+        <select class="right dropdown" id="dropdown" name="dropdown" >
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+                </select>
+              </p>
+      </div>
+   
+    </fieldset>
+    
+
+    <fieldset class="fieldset">
+  <div class="sub-group">
+    <label>Things that should be improved in the future<br>
+        <small>(Check all that apply)</small>
+    </label>
+   <ul style="list-style: none" class="right">
+       <li class="checkbox"><label><input name="ipt" value="1" type="checkbox" class="recommendation">Front-end Projects</label></li>
+       <li class="checkbox"><label><input name="ipt" value="2" type="checkbox" class="recommendation">Back-end Projects</label></li>
+       <li class="checkbox"><label><input name="ipt" value="3" type="checkbox" class="recommendation">Data-vizualization</label></li>
+   </ul>
+  </div></fieldset>
+
+     <fieldset class="fieldset">
+   <h2>Any comments or suggestions?</h2>
+
+    <div class="commentbox">
+
+   <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+
+   <br></br>
+
+  <button id="submit" type="submit">Submit</button>
+       </div></fieldset>
+</form>
+</div>
+  </body>
+</html>
