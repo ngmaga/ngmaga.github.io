@@ -68,7 +68,7 @@ body{
     padding: 4px;
     width: 40px;
     height: 40px;
-    position: absolute;
+    position: relative;
 }
 .menu-avatar-frame{
     position: absolute;
