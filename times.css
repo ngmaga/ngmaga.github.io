@@ -1,0 +1,41 @@
+
+      html{ font-family: sans-serif; }
+      div{ 
+        display: flex; 
+        align-items: center;
+      } 
+      img{ 
+        height: 100%;
+      } 
+      span{
+        display: inline-block;
+        text-align: center;
+        width: 25px;
+      } 
+      span, img{
+        padding: 0px 10px 0px 10px;
+      }
+      label{
+      text-align: left; width: 100px;
+      }
+      hr{
+        border-top: 1px dashed #d6d6d6;
+        margin: 2px;
+        width: 630px;
+      }
+      table{
+        width: max-content;
+      } 
+      div{
+        height: 2.1rem;
+      }
+      .head{
+          width: 630px;
+          background-color:#d6d6d6;
+          height: 5vh;
+          font-weight: bold;
+          margin-bottom: 5px;
+          border-top: solid 1px #d1d1d1;
+          border-bottom: solid 1px #d1d1d1;
+      }
+  
