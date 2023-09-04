@@ -5,7 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: inter;
-    background-color:#ac6700;
+    background-color: rgb(123, 180, 230) ;
 }
 .grid{
     gap: 10px;
@@ -18,13 +18,13 @@ body{
 header{
     height: 7vh;
     width: 80vw;
-    background-color: #ac6700;
+    background-color: rgb(159, 189, 216) ;
     margin-bottom: 10px;
     align-items: center;
     display: flex;
 }
 .card{
-    background-color:  #cf953e;
+    background-color: rgb(159, 189, 216);
     padding: 0px 25px 25px 25px;
     border-radius: 10px;
 }
@@ -32,10 +32,10 @@ header{
     padding: 0px 25px 0px 25px;
 }
 h3{
-    color: #eaa606;
+    color: #387feb;
 }
 a{
-    color: #eaa606;
+    color:  #387feb;
     text-decoration: none;
 }
 p{
