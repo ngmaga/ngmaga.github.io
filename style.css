@@ -1,0 +1,40 @@
+.navbar{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: 14px ;
+    letter-spacing: 1px;
+}
+
+.jumbotron{
+    background: url(https://images.unsplash.com/photo-1560053608-13721e0d69e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    height: 80vh;
+}
+
+.title{
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    color: white;
+}
+
+.about{
+background-color: whitesmoke;
+}
+
+.d-block{
+    width:100%;
+    height: 300px;
+}
+.card-body{
+    height: 300px;
+}
