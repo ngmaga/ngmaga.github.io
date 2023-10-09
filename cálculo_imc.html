@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÁCULO IMC</title>
+    <link rel="stylesheet" href="cálculo_imc.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="title"><h1>CÁLCULO IMC</h1>
+          </div>
+          </header>
+    <div class="container">
+        <fieldset class="fieldset">
+            <h2>REALIZAR CÁLCULO:</h2>
+            <form id="contatoForm">
+                <label  class="left" for="nome">Nome:</label>
+                <input  class="right input-field" type="text" id="nome" placeholder="Digite seu nome" required><br><br>
+
+                <label class="left" for="telefone">Peso:</label>
+                <input  class="right input-field" type="number" id="peso"  placeholder="Digite seu peso" required><br><br>
+              
+                <label  class="left" for="altura">Altura:</label>
+                <input  class="right input-field" type="number" id="altura"  placeholder="Digite sua altura"required><br><br>
+               
+                <button  class="botao"  id="submit"  type="submit">Calcular IMC</button><br><br>
+
+            </form>
+</fieldset>
+
+<script src="cálculo_imc.js"></script>
+</body>
+</html>
