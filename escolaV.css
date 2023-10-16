@@ -1,0 +1,123 @@
+body {
+    padding: 0 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color:#84cfe2;
+}
+
+strong{
+  position:relative;
+ bottom:8px;
+  font-size:16px;
+  text-align:center;
+   font-weight:bold;
+   font-family:Roboto;
+}
+.container{
+    background-color:#FFFFFF;
+    font-family:Quicksand;
+    max-width:70%;
+    margin:auto;
+    padding:0;
+    border-radius:15px;
+  }
+input, select {
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+}
+
+#pre-matricula {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+#pre-matricula>div {
+    grid-column: 1 / span 2;
+    padding: 2px;
+    width: 600px;
+}
+
+#pre-matricula>div>div {
+    gap: 10px;
+    padding: 5px;
+    padding-bottom: 15px;
+    display: grid;
+}
+
+#pre-matricula>div>div:nth-child(1) {
+    grid-template-columns: auto 1fr;
+}
+
+#pre-matricula>div>div:nth-child(1)>label {
+    text-align: end;
+    margin-left: 80px;
+}
+
+#pre-matricula>div>div:nth-child(1)>strong {
+    grid-column: 1 / span 2;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+#pre-matricula>div>div:nth-child(2) {
+    margin-top: 2px;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+#pre-matricula>div>div:nth-child(2)>strong {
+    grid-column: 1 / span 3;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+#pre-matricula>div>div:nth-child(2) p {
+    margin-top: 0;
+}
+
+#pre-matricula>div>div:nth-child(2) div {
+    margin-left: 10px;
+}
+
+input:not([type=radio]):not([type=checkbox]) {
+    box-sizing: border-box;
+    width: 200px;
+}
+
+#ddd,
+#ramal {
+    width: 40px;
+}
+#telefone {
+    width: 100px
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+    height: 30px;
+    transition: .2s;
+    border-style: solid;
+    border-color: #000000;
+    background:#b1dffa;
+    font-family:Roboto;
+    border-radius:4px;
+    font-size:23px;
+}
+button:hover {
+    border-color: #727171;
+    background-color: #ccc;
+}
+
+#pre-matricula button:nth-child(2) {
+    margin-right: 10px;
+}
+#pre-matricula button:nth-child(3) {
+    margin-left: 10px;
+}
+

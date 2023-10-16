@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Virtual - Pré-Matrícula</title>
+    <link rel="stylesheet" href="escolaV.css">
+</head>
+<body>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+    <form id="pre-matricula">
+        <div class="container">
+            <div>
+                <strong>Dados Pessoais:</strong>
+                <label for="nome-aluno">Nome do Aluno:</label>
+                <input id="nome-aluno" type="text" required>
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input id="data-nascimento" type="date" required>
+
+                <label for="nome-mae">Nome da Mãe:</label>
+                <input id="nome-mae" type="text" required>
+
+                <label for="nome-pai">Nome do Pai:</label>
+                <input id="nome-pai" type="text" required>
+
+                <span style="text-align: end;">Telefone:</span>
+                <div>
+                    <label for="ddd">DDD:</label>
+                    (<input id="ddd" type="number" required>)
+                    <label for="telefone">Tel:</label>
+                    <input id="telefone" type="tel" required>
+                    <label for="ramal">Ramal:</label>
+                    <input id="ramal" type="number" required>
+                </div>
+
+                <label for="email">E-Mail:</label>
+                <input id="email" type="email" required>
+            </div>
+            <div>
+                <strong>Informações de Matrícula:</strong>
+                <div>
+                    <p><label for="serie">Série:</label></p>
+                    <select id="serie">
+                        <option>Pré-Escolar</option>
+                        <option>Ensino Fundamental I</option>
+                        <option>Ensino Fundamental II</option>
+                        <option>1ª série do Ensino Médio</option>
+                        <option>2ª série do Ensino Médio</option>
+                        <option>3ª série do Ensino Médio</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Turno:</p>
+                    <input type="radio" name="turno" id="turno-manha" required>
+                    <label for="turno-manha">Manhã</label>
+                    <br>
+                    <input type="radio" name="turno" id="turno-tarde" required>
+                    <label for="turno-tarde">Tarde</label>
+                </div>
+                <div>
+                    <p>Atividades Extracurriculares:</p>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-informatica">
+                    <label for="atividade-informatica">Informática</label>
+                    <br>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-musica">
+                    <label for="atividade-musica">Música</label>
+                    <br>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-balet">
+                    <label for="atividade-balet">Balet</label>
+                    <br>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-pintura">
+                    <label for="atividade-pintura">Pintura</label>
+                    <br>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-judo">
+                    <label for="atividade-judo">Judô</label>
+                    <br>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-futebol">
+                    <label for="atividade-futebol">Futebol</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Campos</button>
+    </form>
+    <script src="escolaV.js"></script>
+</body>
+</html>
