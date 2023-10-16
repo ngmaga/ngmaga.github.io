@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Adicione linhas a sua tabela</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    #txtNumRows {
+      padding: 5px;
+      width: 60px;
+    }
+
+    #jsAddRows {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Adicione linhas na sua tabela </h1>
+    <input type="text" id="txtNumRows" placeholder="Enter a number" />
+    <button id="jsAddRows" onclick="js_add_rows()">Adicione</button>
+    <table id="sampleTable">
+      <tr>
+        <th>Cabeçário 1</th>
+        <th>Cabeçário 2</th>
+      </tr>
+      <tr>
+        <td>Linha 1 coluna 1</td>
+        <td>Linha 1 coluna 2</td>
+      </tr>
+      <tr>
+        <td>Linha 2 coluna 1</td>
+        <td>Linha 2 coluna 2</td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    function js_add_rows() {
+      var numRowsInput = document.getElementById("txtNumRows");
+      var table = document.getElementById("sampleTable");
+      var numRows = parseInt(numRowsInput.value);
+
+      if (isNaN(numRows)) {
+        alert("Por favor, coloque um número válido.");
+      } else if (numRows < 1 || numRows > 10) {
+        alert("O número só é valido se for entre 1 e 10.");
+      } else {
+        for (var i = 0; i < numRows; i++) {
+          var row = table.insertRow(-1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          cell1.innerHTML = "Nova linha coluna 1 ";
+          cell2.innerHTML = "Nova linha coluna 2";
+        }
+        numRowsInput.value = "";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrato Bancário</title>
+    <link rel="stylesheet" href="extrato.css">
+</head>
+<body>
+    <div style="margin: 0 20px 20px 0">
+        <h1>Resumir Extrato </h1>
+        <form method="dialog" id="form-inputs">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option selected>Mercado</option>
+                <option>Viagem</option>
+                <option>Eventos</option>
+                <option>Transporte</option>
+            </select>
+            <label for="valor">Valor:</label>
+            <input id="valor" type="text" required>
+            <p id="error" style="display: none;">* error</p>
+            <label for="data">Data:</label>
+            <input id="data" type="date" required>
+            <div id="buttons">
+                <button type="submit" id="adicionar">Adicionar</button>
+                <button formnovalidate id="calcular">Calcular</button>
+                <button formnovalidate id="limpar-extrato">Limpar Tabela</button>
+            </div>
+        </form>
+        <table>
+            <caption>Extrato Bancário</caption>
+            <thead>
+                <tr>
+                    <td>Categoria</td>
+                    <td>Data</td>
+                    <td>Valor</td>
+                </tr>
+            </thead>
+            <tbody id="gastos-tabela"></tbody>
+        </table>
+    </div>
+
+    <div id="resumo" style="display: none;">
+        <div id="ponta-papel"></div>
+        <h2>Resumo</h2>
+        <p>Total Gasto: <span id="total-gasto"></span></p>
+        <p>Maior Gasto: <span id="maior-gasto"></span></p>
+        <div id="total-data">
+        </div>
+        <div id="total-categoria">
+            <hr>
+        </div>
+        <div id="maior-categoria">
+            <hr>
+        </div>
+    </div>
+
+    <script src="extrato.js"></script>
+</body>
+</html>

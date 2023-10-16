@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDANÇA DE FONTE</title>
+</head>
+<body>
+     <p id="text">Java Script Exercises - w3resource</p>
+     <div>
+        <button id="jsstyle" onclick="js_style()">Style</button>
+     </div>
+
+     <script>
+        function js_style() {
+            var textElement = document.getElementById("text");
+            // para alterar a fonte 
+            textElement.style.fontFamily = "Arial, sans-serif";
+            // para alterar a cor 
+            textElement.style.color = "blue"; // Você pode alterar a cor para a desejada
+        }
+     </script>
+</body>
+</html>
