@@ -50,11 +50,11 @@
 <body>
   <h1>Contagem de Vogais</h1>
   <input type="text" id="inputString" placeholder="Digite uma frase" />
-  <button onclick="countVowels()">Contar Vogais</button>
+  <button onclick="contarvogais()">Contar Vogais</button>
   <p id="result">O número de vogais nessa frase é: <span id="NumeroVogais">0</span></p>
 
   <script>
-    function countVowels() {
+    function contarvogais() {
       var inputString = document.getElementById("inputString").value;
       var NumeroVogais = 0;
       var vogais = "AEIOUaeiouáàâãAÁÀÂÃéèêEÉÈÊíìîIÍÌÎóòôõOÓÒÔÕúùûUÚÙÛ";
