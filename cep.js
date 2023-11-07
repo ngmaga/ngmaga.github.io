@@ -1,4 +1,4 @@
- const estadoImages = {
+const estadoImages = {
             "AC": { nome: "Acre", imagem: "img/acre.png" },
             "AL": { nome: "Alagoas", imagem: "img/alagoas.png" },
             "AP": { nome: "Amapá", imagem: "img/amapa.png" },
@@ -31,14 +31,7 @@
         const cepForm = document.getElementById("cepForm");
         cepForm.addEventListener("submit", function (event) {
             event.preventDefault();
-            const cepInput = document.getElementById("cep");
-            const cep = cepInput.value;
-
-            // Verifique se o CEP possui 8 dígitos
-            if (cep.length !== 8) {
-                alert("O CEP deve ter exatamente 8 dígitos.");
-                return;
-            }
+            const cep = document.getElementById("cep").value;
 
             const apiUrl = `https://viacep.com.br/ws/${cep}/json/`;
             fetch(apiUrl)
@@ -64,7 +57,7 @@
                     }
                 })
                 .catch(error => {
-                    alert.error("Erro ao buscar o endereço pelo CEP: " + error);
+                    console.error("Erro ao buscar o endereço pelo CEP: " + error);
                 });
         });
 
