@@ -23,7 +23,7 @@ const estadoImages = {
             "RO": { nome: "Rondônia", imagem: "img/rondonia.png" },
             "RR": { nome: "Roraima", imagem: "img/roraima.png" },
             "SC": { nome: "Santa Catarina", imagem: "img/santa-catarina.png" },
-            "SP": { nome: "São Paulo", imagem: "img/são-paulo.png" },
+            "SP": { nome: "São Paulo", imagem: "img/são paulo.png" },
             "SE": { nome: "Sergipe", imagem: "img/sergipe.png" },
             "TO": { nome: "Tocantins", imagem: "img/tocantins.png" },
         }
